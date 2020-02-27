@@ -1,0 +1,24 @@
+.nav {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+}
+
+.nav__item {
+    min-width: 100%;
+    min-height: 5%;
+    padding: 10px 20px;
+    border: 2px solid $borders;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,9 +1,0 @@
-.wrapper {
-    color: $default-color;
-    background-image: url('/assets/images/2.jpg');
-    width: 100%;
-    height: 500px;
-    @include tablet {
-        color: $main-color;
-    };
-}
