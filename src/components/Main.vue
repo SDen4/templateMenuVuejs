@@ -1,21 +1,24 @@
 <template>
     <div class="menu">
-        <div class="menu__title">
+        <header class="header">
             <h1>Simple template Menu</h1>
-        </div>
-        <div class="menu__content">
+        </header>
+        <main class="menu__content">
 
             <nav class="nav">
-                <router-link class="nav__item" to="/about">About</router-link>
-                <router-link class="nav__item" to="/settings">Settings</router-link>
-                <router-link class="nav__item" to="/feedback">Feedback</router-link>
+                <router-link class="nav__item" exact-active-class="nav_active" to="/">About</router-link>
+                <router-link class="nav__item" exact-active-class="nav_active" to="/settings">Settings</router-link>
+                <router-link class="nav__item" exact-active-class="nav_active" to="/feedback">Feedback</router-link>
             </nav>
 
             <div class="menu__info">
                 <router-view></router-view>
             </div>
 
-        </div>
+        </main>
+        <footer class="footer">
+            <h2>Footer</h2>
+        </footer>
     </div>
 </template>
 

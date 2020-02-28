@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 1%;
+    padding: 1% .5% 1% 1%;
 }
 
 .nav__item {
@@ -15,10 +15,17 @@
     border: 2px solid $borders;
     border-radius: 5px;
     margin-bottom: 2%;
-    font-size: 18px;
     text-align: center;
     text-decoration: none;
+    transition: .5s;
     &:last-child {
         margin-bottom: 0;
     }
+    &:hover {
+        background-color: $bg-pages;
+    }
+}
+
+.nav_active {
+    background-color: $bg-pages;
 }
