@@ -4,7 +4,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { VueLoaderPlugin } = require("vue-loader");
 
-
 const PATHS = {
     src: path.join(__dirname, '../src'),
     dist: path.join(__dirname, '../dist'),
@@ -27,6 +26,15 @@ module.exports = {
     },
     module: {
         rules: [{
+            test: /\.pug$/,
+            oneOf: [{
+                resourceQuery: /^\?vue/,
+                use: ["pug-plain-loader"]
+            }, {
+                use: ['html-loader', 'pug-html-loader']
+            }]
+        },
+        {
             test: /\.js$/,
             loader: "babel-loader",
             exclude: "/node_modules/"
@@ -36,7 +44,7 @@ module.exports = {
             loader: "vue-loader",
             options: {
                 loader: {
-                    scss: "vue-style-loader!css-loader!sass-loader"
+                    scss: "vue-style-loader!css-loader!sass-loader",
                 }
             }
         },
@@ -94,13 +102,12 @@ module.exports = {
         }),
         new HtmlWebpackPlugin ({
             hash: false,
-            template: `${PATHS.src}/index.html`,
+            template: `${PATHS.src}/pug/pages/index.pug`,
             filename: "./index.html"
         }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/images`, to: `${PATHS.assets}images`},
             {from: `${PATHS.src}/static`, to: ""}
-
         ])
     ]
 }

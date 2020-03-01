@@ -1,6 +1,6 @@
 export default [
     {
-      path: "/about",
+      path: "/",
       component: () => import("../components/MenuAbout.vue"),
     },
     {

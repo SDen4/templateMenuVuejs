@@ -1,13 +1,11 @@
-<template>
-    <div class="menu__item menu__about">
-        <h1>About</h1>
-    </div>
+<template lang="pug">
+    .menu__item.menu__about
+        h1 About
 </template>
 
 <script>
-export default {
-
-}
+    export default {
+    }
 </script>
 
 <style lang="scss" scoped>
