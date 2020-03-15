@@ -7,21 +7,21 @@
                 .feedback__item
                     .feedback__info.feedback__img_front
                         .feedback__img_container
-                            img.feedback__user-photo(src="/assets/images/user.png")
+                            img.feedback__user-photo(src="assets/images/user.png")
                     .feedback__info.feedback__text_back
                         p Feedback text
             li.feedback__item_wrapper
                 .feedback__item
                     .feedback__info.feedback__img_front
                         .feedback__img_container
-                            img.feedback__user-photo(src="/assets/images/1.jpg")
+                            img.feedback__user-photo(src="assets/images/1.jpg")
                     .feedback__info.feedback__text_back
                         p Feedback text
             li.feedback__item_wrapper
                 .feedback__item
                     .feedback__info.feedback__img_front
                         .feedback__img_container
-                            img.feedback__user-photo(src="/assets/images/2.jpg")
+                            img.feedback__user-photo(src="assets/images/2.jpg")
                     .feedback__info.feedback__text_back
                         p Feedback text
             li.feedback__item_wrapper
