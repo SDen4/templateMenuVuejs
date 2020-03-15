@@ -1,6 +1,15 @@
 .menu__info {
     width: 70%;
+    min-height: 100%;
+    height: fit-content;
     padding: 1% 1% 1% .5%;
+    @include laptop {
+        width: 75%;
+    }
+    @include addition {
+        width: 95%;
+        min-height: 63vh;
+    }
 }
 
 .menu__item {
