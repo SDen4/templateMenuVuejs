@@ -10,3 +10,5 @@ $ git remote set-url origin <link of new repo in github>
 $ git push -u origin master
 $ npm run dev
 ```
+##  Watch on github-pages:
+https://sden4.github.io/templateMenuVuejs/dist
