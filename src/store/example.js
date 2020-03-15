@@ -1,5 +1,6 @@
 export default {
     state: {
+        message: "Hello!"
     },
     mutations: {
     },
