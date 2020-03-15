@@ -16,6 +16,12 @@
     }
   }
   
+  @mixin addition() {
+    @media screen and (max-width: $addition) {
+      @content;
+    }
+  }
+
   @mixin smartphone() {
     @media screen and (max-width: $smartphone) {
       @content;

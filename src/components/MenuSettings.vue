@@ -1,7 +1,6 @@
-<template>
-    <div class="menu__item menu__settings">
-        <h1>Settings</h1>
-    </div>
+<template lang="pug">
+    .menu__item.menu__settings
+        h1 Settings
 </template>
 
 <script>

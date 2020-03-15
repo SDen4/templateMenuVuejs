@@ -6,6 +6,12 @@
     align-items: center;
     justify-content: flex-start;
     padding: 1% .5% 1% 1%;
+    @include laptop {
+        width: 25%;
+    }
+    @include addition {
+        width: 95%;
+    }
 }
 
 .nav__item {
@@ -23,6 +29,12 @@
     }
     &:hover {
         background-color: $bg-pages;
+    }
+    @include laptop {
+        padding: 10px;
+    }
+    @include tablet {
+        padding: 10px 5px;
     }
 }
 
